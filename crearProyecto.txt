@@ -1,0 +1,10 @@
+pasos seguidos para crear el proyecto en Ubuntu con el WSL:
+dotnet new sln -n Tests
+dotnet new console -n TicTacToe
+dotnet sln add TicTacToe/TicTacToe.csproj
+dotnet new xunit -n TicTacToe.Tests
+dotnet add TicTacToe.Tests/
+dotnet add TicTacToe.Tests/TicTacToe.Tests.csproj reference TicTacToe/TicTacToe.csproj 
+dotnet sln add TicTacToe.Tests/TicTacToe.Tests.csproj 
+
+compilar: dotnet build
