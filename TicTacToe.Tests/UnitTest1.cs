@@ -1,10 +1,11 @@
-﻿namespace TicTacToe.Tests;
+﻿using Xunit;
 
 public class UnitTest1
 {
     [Fact]
-    public void Test1()
+    public void TicTacToeCanBeInstantiated()
     {
-
+      TicTacToe sut = new TicTacToe();
+      Assert.NotNull(sut);
     }
 }
