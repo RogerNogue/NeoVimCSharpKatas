@@ -2,10 +2,10 @@
 
 public class TicTacToe
 {
-  public bool GameInProgress = true;
+  public bool GameInProgress = false;
   public void StartGame()
   {
-
+    GameInProgress = true;
   }
 }
 

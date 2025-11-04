@@ -16,4 +16,11 @@ public class UnitTest1
       sut.StartGame();
       Assert.Equal(sut.GameInProgress, true);
     }
+
+    [Fact]
+    public void IfNoGameHasBeenStartedGameIsNotInProgress()
+    {
+      TicTacToe sut = new TicTacToe();
+      Assert.Equal(sut.GameInProgress, false);
+    }
 }
