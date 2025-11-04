@@ -9,3 +9,6 @@ tasks:
 
 notes:
 - when game is ended, game is not in progress
+- when game started, 2 players can make a move or take field (domain language according to description)
+- when a player makes a move, the same player can not repeat
+- when a field is taken, it can not be taken again
